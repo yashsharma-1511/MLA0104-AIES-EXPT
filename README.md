@@ -151,22 +151,7 @@ GBFS(graph, start, goal, h):
                 PQ.insert((h[neighbor], neighbor))
 ```
 
----
-
----
----
-
-
----
----
-
-# MLA0105 - Prolog Programming Experiments
-
-This section contains Prolog program pseudocode for AI/logic programming lab experiments.
-
----
-
-## 1. Sum of Integers from 1 to n
+## 9. Sum of Integers from 1 to n
 
 ```prolog
 sum(0, 0).
@@ -181,7 +166,7 @@ sum(N, Sum) :-
 
 ---
 
-## 2. DB with Name, DOB
+## 10. DB with Name, DOB
 
 ```prolog
 person(john, date(12, 5, 2000)).
@@ -194,7 +179,7 @@ person(alex, date(1, 1, 2001)).
 
 ---
 
-## 3. STUDENT-TEACHER-SUB-CODE
+## 11. STUDENT-TEACHER-SUB-CODE
 
 ```prolog
 teaches(mr_smith, cs101).
@@ -213,7 +198,7 @@ taughtBy(Student, Teacher) :-
 
 ---
 
-## 4. PLANETS DB
+## 12. PLANETS DB
 
 ```prolog
 planet(mercury, 1).
@@ -231,7 +216,7 @@ distanceFromSun(Planet, Position) :-
 
 ---
 
-## 5. Towers of Hanoi
+## 13. Towers of Hanoi
 
 ```prolog
 hanoi(0, _, _, _) :- !.
@@ -247,7 +232,7 @@ hanoi(N, Source, Target, Aux) :-
 
 ---
 
-## 6. Bird - Can Fly or Not
+## 14. Bird - Can Fly or Not
 
 ```prolog
 bird(sparrow).
@@ -266,7 +251,7 @@ canFly(Bird) :-
 
 ---
 
-## 7. Family Tree
+## 15. Family Tree
 
 ```prolog
 female(pam). female(liz). female(ann). female(pat).
@@ -291,7 +276,7 @@ brother(B, C):- male(B),   parent(P, B), parent(P, C), B \== C.
 
 ---
 
-## 8. Diet Suggestion System based on Disease
+## 16. Diet Suggestion System based on Disease
 
 ```prolog
 diet(diabetes, 'Low sugar, high fiber diet').
@@ -307,7 +292,7 @@ suggestDiet(Disease, Diet) :-
 
 ---
 
-## 9. Monkey Banana Problem
+## 17. Monkey Banana Problem
 
 ```prolog
 % State: state(MonkeyPos, MonkeyOnBox, BoxPos, HasBanana)
@@ -338,7 +323,7 @@ canGet(State1) :-
 
 ---
 
-## 10. Fruit and its Color using Backtracking
+## 18. Fruit and its Color using Backtracking
 
 ```prolog
 fruit(apple, red).
@@ -356,7 +341,7 @@ findFruit(Color, Fruit) :-
 
 ---
 
-## 11. Best First Search Algorithm
+## 19. Best First Search Algorithm
 
 ```prolog
 % Facts: edge(Node1, Node2, Cost). heuristic(Node, H).
@@ -379,7 +364,7 @@ bfSearch([Path | OtherPaths], Goal, SolutionPath) :-
 
 ---
 
-## 12. Medical Diagnosis
+## 20. Medical Diagnosis
 
 ```prolog
 symptom(fever).
@@ -403,7 +388,7 @@ subset([H|T], L) :- member(H, L), subset(T, L).
 
 ---
 
-## 13. Forward Chaining
+## 21. Forward Chaining
 
 ```prolog
 % Facts and rules
@@ -426,7 +411,7 @@ forwardChain(Facts, Rules, NewFacts) :-
 
 ---
 
-## 14. Backward Chaining
+## 22. Backward Chaining
 
 ```prolog
 % Facts
@@ -452,4 +437,4 @@ hasFur(X) :- mammal(X).
 
 **Yash Sharma**
 SIMATS Engineering
-Course: MLA0104 / MLA0105 - Artificial Intelligence, Expert Systems & Logic Programming
+Course: MLA0104 - Artificial Intelligence, Expert Systems & Logic Programming
